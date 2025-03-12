@@ -1,6 +1,6 @@
-**Reflection on Ayoayo Game Implementation**
+Reflection on Ayoayo Game Implementation
 
-### Initial Reflection
+ Initial Reflection
 When I first approached the Ayoayo project, I started by carefully analyzing the game rules and breaking them down into key components. My initial thoughts were to structure the game using an `Ayoayo` class that would handle the board, players, and gameplay mechanics. I knew I needed:
 - A way to represent the board with pits and stores.
 - Methods to execute a player's move while ensuring proper seed distribution.
@@ -9,15 +9,15 @@ When I first approached the Ayoayo project, I started by carefully analyzing the
 
 My first approach was to use lists to represent the board state and iterate through them when distributing seeds. I also planned to implement helper functions to manage moves and special rules separately.
 
-### Final Reflection
+ Final Reflection
 After implementing the game, I encountered several challenges that required adjustments to my initial approach. The biggest challenge was ensuring that seeds were distributed correctly into the opponent's pits while following the counterclockwise direction. Initially, I struggled with cases where a player’s move should skip the opponent's store and capture seeds according to the special rules.
 
 To solve this, I implemented a nested `while` loop that carefully checked conditions before placing seeds, ensuring proper distribution. This significantly improved the accuracy of my implementation. Additionally, debugging and testing different edge cases helped refine the logic further.
 
-### Key Takeaways
-- **Breaking down the problem**: By separating the game logic into distinct functions, I made the implementation easier to manage and debug.
-- **Handling game mechanics efficiently**: The use of a nested loop for seed distribution helped overcome a major challenge in the game logic.
-- **Importance of testing**: Running multiple test cases allowed me to validate and fine-tune the rules, especially for extra turns and captures.
-- **Understanding state management**: Keeping track of the board state and ensuring correct updates after each move was crucial for maintaining game integrity.
+ Key Takeaways
+- Breaking down the problem: By separating the game logic into distinct functions, I made the implementation easier to manage and debug.
+- Handling game mechanics efficiently: The use of a nested loop for seed distribution helped overcome a major challenge in the game logic.
+- Importance of testing: Running multiple test cases allowed me to validate and fine-tune the rules, especially for extra turns and captures.
+- Understanding state management: Keeping track of the board state and ensuring correct updates after each move was crucial for maintaining game integrity.
 
 Overall, this project deepened my understanding of algorithmic thinking, problem-solving, and implementing board game logic programmatically.
